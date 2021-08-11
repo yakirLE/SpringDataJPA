@@ -1,0 +1,12 @@
+# use Postgres
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/conference_springdata_jpa
+    username: postgres
+    password: Password1!
+  jpa:
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: true
